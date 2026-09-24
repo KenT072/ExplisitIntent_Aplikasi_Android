@@ -11,9 +11,23 @@
     
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/btnExplisit1"
         android:text="Buka Explisit Intent"/>
+
+    <EditText
+        android:id="@+id/edtExplisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan teks di sini"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnExplisit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Data (Explisit 2)"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
 

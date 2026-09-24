@@ -3,6 +3,7 @@ package com.example.explisitintent
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +20,16 @@ class MainActivity : AppCompatActivity() {
                 this@MainActivity,
                 MainActivity2 ::class.java
             )
+            startActivity(intent)
+        }
+
+        val edtExplisit = findViewById<EditText>(R.id.edtExplisit)
+        val btnExplisit2 = findViewById<Button>(R.id.btnExplisit2)
+
+        btnExplisit2.setOnClickListener {
+            val teksYangDikirim = edtExplisit.text.toString()
+            val intent = Intent(this@MainActivity, MainActivity3::class.java)
+            intent.putExtra(MainActivity3.dataTerima, teksYangDikirim)
             startActivity(intent)
         }
 
